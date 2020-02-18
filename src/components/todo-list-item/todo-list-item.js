@@ -1,8 +1,9 @@
 import React from 'react';
-import './todo-list-item';
+import './todo-list-item.css';
 const TodoListItem = ({ label, important=false}) => {
   const style = {
-    color:  important ? 'tomato' : 'black'
+    color:  important ? 'tomato' : 'black',
+    fontWeight: important ? 'bold' : 'normal'
   };
  
   
@@ -14,11 +15,11 @@ const TodoListItem = ({ label, important=false}) => {
       {label}
     </span>
     <button type='button'
-    className='btn btn-outline-success btn-sm'>
+    className='btn btn-outline-success btn-sm float-right'>
     <i className='fa fa-exclamation' />
     </button>
     <button type='button'
-    className='btn btn-outline-danger btn-sm'>
+    className='btn btn-outline-danger btn-sm float-right'>
     <i className='fa fa-trash-o' />
     </button>
     </span>
