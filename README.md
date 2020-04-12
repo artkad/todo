@@ -1,1 +1,1 @@
-## my first vue project Todo
+## my first React project Todo
